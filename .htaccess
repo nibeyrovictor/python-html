@@ -1,0 +1,16 @@
+Options +Indexes
+
+# Activar el módulo SSL
+# SSLEngine On
+
+# Especificar la ruta del certificado SSL y de la clave privada
+# SSLCertificateFile ./cert/RSA-cert.pem
+# SSLCertificateKeyFile ./cert/RSA-privkey.pem
+
+# Opcional: especificar la cadena de certificados si es necesario
+# SSLCertificateChainFile /ruta/a/cadena_de_certificados.pem
+
+# Impedir el acceso al directorio personalizado
+# <Directory /awesome-login-pages-main>
+#     Require all denied
+# </Directory>
