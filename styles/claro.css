@@ -7,11 +7,11 @@ body {
 /* Estilos para la navbar en modo claro */
 .navbar-dark .navbar-nav .nav-link {
     background-color: #f8f9fa; /* Color de fondo en modo claro */
-    color: #333; /* Color de texto en modo claro */
+
 }
 
 .navbar-dark .navbar-brand {
-    color: #5e5e5ec4; /* Color de texto para la marca en modo oscuro claro */
+    color: #5e5e5ec4; /* Color de texto para la marca en modo claro */
 }
 
 /* Estilos para el footer en modo claro */
@@ -26,8 +26,8 @@ body {
 
 }
 
-/* Estilos para la clase content en modo oscuro */
+/* Estilos para la clase content en modo claro*/
 .content {
-    color: #050202; /* Color de texto en modo oscuro */
-    background-color: #f5ebeb; /* Fondo en modo oscuro */
+    color: #050202; /* Color de texto en modo claro */
+    background-color: #f5ebeb; /* Fondo en modo claro */
 }
