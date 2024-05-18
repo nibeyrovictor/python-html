@@ -1,0 +1,23 @@
+/* Estilos para el modo claro */
+body {
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Texto oscuro */
+}
+
+/* Estilos para la navbar en modo claro */
+.navbar {
+    background-color: #f8f9fa; /* Color de fondo en modo claro */
+    color: #333; /* Color de texto en modo claro */
+}
+
+/* Estilos para el footer en modo claro */
+.footer {
+    background-color: #f8f9fa; /* Color de fondo en modo claro */
+    color: #333; /* Color de texto en modo claro */
+}
+
+/* Estilo de navbar-collapse en modo claro */
+.navbar-toggler-icon {
+    color: white; /* Fondo blanco */
+
+}

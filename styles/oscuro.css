@@ -1,0 +1,35 @@
+/* Estilos para el modo oscuro */
+body {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+}
+
+/* Estilos para la navbar en modo oscuro */
+.navbar {
+    color: #fff; /* Color de texto en modo oscuro */
+    background-color: #343a40; /* Color de fondo en modo oscuro */
+
+}
+.nav {
+    color: #fff; /* Color de texto en modo oscuro */
+    background-color: #343a40; /* Color de fondo en modo oscuro */
+
+}
+.navbar a {
+    color: #fff; /* Color de texto en modo oscuro */
+    background-color: #343a40; /* Color de fondo en modo oscuro */
+
+}
+
+/* Estilos para el footer en modo oscuro */
+.footer {
+    background-color: #343a40; /* Color de fondo en modo oscuro */
+    color: #fff; /* Color de texto en modo oscuro */
+}
+
+/* Estilos para la clase content en modo oscuro */
+.content {
+    color: #fff; /* Color de texto en modo oscuro */
+    background-color: #333; /* Fondo en modo oscuro */
+}
+
