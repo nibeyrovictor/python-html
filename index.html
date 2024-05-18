@@ -110,6 +110,26 @@
 </section>
 
 
+<script>
+  function initMap() {
+      var ubicacion = { lat: -27.470125, lng: -58.821028 }; // Cambia estas coordenadas a las de tu ubicación
+
+      var map = new google.maps.Map(document.getElementById('mapa'), {
+          zoom: 15, // Puedes ajustar el nivel de zoom
+          center: ubicacion
+      });
+
+      var marker = new google.maps.Marker({
+          position: ubicacion,
+          map: map,
+          title: 'Ubicación'
+      });
+  }
+
+  // Llama a la función initMap una vez que se cargue la página
+  google.maps.event.addDomListener(window, 'load', initMap);
+</script>
+
 <!-- Script depop over para mensajes dentro de la página -->
       <script src="./styles/node_modules/@popperjs/core/dist/umd/popper.min.js"> </script>
       <script>
