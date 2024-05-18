@@ -149,10 +149,14 @@
               </div>
             </div>
             <div class="row mt-4">
-              <div class="d-grid gap-2 col-md-12 text-center">
+              <div class="d-flex gap-2 col-md-12 text-center">
                 <input class="btn btn-success btn-lg btn-block" type="button" value="Enviar" id="enviarFormulario">
-                <input class="btn btn-danger btn-lg btn-block" type="button" value="Limpiar" id="limpiarFormulario">
-              </div>
+                <div class="d-flex justify-content-center align-items-center">
+                  <input class="btn btn-danger btn-lg btn-block" type="button" value="Limpiar" id="limpiarFormulario">
+                  <a href="#" title="Boton mas cercano" data-bs-toggle="popover" data-bs-trigger="hover"
+                 data-bs-content="Botón para limpiar lo que se haya cargado en el formulario">?</a>
+                </div>
+                </div>
               <div id="mensajeExito" style="display: none;">
                 <p class="text-success">¡El formulario se ha enviado con éxito!</p>
               </div>
