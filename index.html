@@ -38,31 +38,23 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">ArgentinaTur</a>
+            <a class="nav-link active" aria-current="page" href="#" onclick="changeTextColor(this)">ArgentinaTur</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./awesome-login-pages-main/">Logins a elegir</a>
+            <a class="nav-link" href="./awesome-login-pages-main/" onclick="changeTextColor(this)">Logins a elegir</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./sidebarmenu.html">Menu post login admin</a>
+            <a class="nav-link" href="./login/login.html">Login/Registro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#formulario">Contacto</a>
+            <a class="nav-link" href="./sidebarmenu.html" onclick="changeTextColor(this)">Menu post login admin</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Link
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="./awesome-login-pages-main/index-login.html">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#formulario" onclick="changeTextColor(this)">Contacto</a>
           </li>
-        </ul>
+          </ul>
+
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Texto a buscar" aria-label="">
           <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -330,6 +322,25 @@
       return new bootstrap.Popover(popoverTriggerEl)
     })
   </script>
+
+<script>
+  function changeTextColor(element) {
+      var links = document.querySelectorAll('.nav-link');
+      links.forEach(function (link) {
+          link.classList.remove('active1');
+      });
+      element.classList.add('active1');
+  }
+
+
+  function toggleDarkMode() {
+      // Obtener el elemento <body>
+      var body = document.querySelector('body');
+      
+      // Cambiar la clase CSS del elemento <body> para alternar entre los estilos claro y oscuro
+      body.classList.toggle('dark-mode');
+  }
+</script>
 
 </body>
 
