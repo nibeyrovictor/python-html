@@ -69,14 +69,7 @@
       </div>
     </div>
   </nav>
-  
-  <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header"
-    data-bs-content="Some content inside the popover">
-    Toggle popover
-  </button>
 
-  <a href="#" title="Boton mas cercano" data-bs-toggle="popover" data-bs-trigger="hover"
-    data-bs-content="esplicacion destinado a la explicacion de la interface">Ayuda</a>
 
 <!-- Carrusel -->
     <section id="slider">
@@ -122,7 +115,7 @@
       <div class="row justify-content-center">
         <div class="col-md-6">
           <h2 class="mb-4 text-center"><span class="smaller-text">Modo de contacto</span></h2>
-          <form action="" method="post">
+          <form action="" method="post" enctype="multipart/form-data">
             <div class="row g-3 mt-4">
               <div class="col-md-6">
                 <input class="form-control" type="text" name="Nombre" id="Nombre" placeholder="Nombre">
@@ -138,7 +131,12 @@
             </div>
             <div class="row g-3 mt-4">
               <div class="col-md-12">
-                <input class="form-control" type="mail" name="mail" id="mail" placeholder="Correo">
+                <input class="form-control" type="email" name="mail" id="mail" placeholder="Correo">
+              </div>
+            </div>
+            <div class="row g-3 mt-4">
+              <div class="col-md-12">
+                <input class="form-control" type="file" name="archivo" id="archivo">
               </div>
             </div>
             <div class="row mt-4">
@@ -153,13 +151,12 @@
                 <div class="d-flex justify-content-center align-items-center">
                   <input class="btn btn-danger btn-lg btn-block" type="button" value="Limpiar" id="limpiarFormulario">
                   <a href="#" title="Boton mas cercano" data-bs-toggle="popover" data-bs-trigger="hover"
-                 data-bs-content="Botón para limpiar lo que se haya cargado en el formulario" class="lni lni-question-circle"></a>
+                    data-bs-content="Botón para limpiar lo que se haya cargado en el formulario" class="lni lni-question-circle"></a>
                 </div>
-                </div>
+              </div>
               <div id="mensajeExito" style="display: none;">
                 <p class="text-success">¡El formulario se ha enviado con éxito!</p>
               </div>
-
             </div>
           </form>
         </div>
@@ -172,6 +169,7 @@
       </div>
     </div>
   </section>
+  
 
 
     <!-- Flecha hacia arriba -->
@@ -307,6 +305,7 @@
       document.getElementById('Apellido').value = '';
       document.getElementById('Comentario').value = '';
       document.getElementById('mail').value = '';
+      document.getElementById('archivo').value = '';
     }
 
     // Asocia la función de limpiar al botón "Limpiar"

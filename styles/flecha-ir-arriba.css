@@ -5,27 +5,28 @@
       width: 50px;
       /* Tamaño del círculo */
       height: 50px;
-      /* Tamaño del círculo */
+      line-height: 50px;  
+          /* Tamaño del círculo */
       border-radius: 50%;
       background-color: #00336d;
       /* Color de fondo del botón */
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 50px;
       /* Tamaño del ícono */
       color: #fff;
       text-align: center;
-      line-height: 50px;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
       opacity: 0;
       visibility: hidden;
+      display: inline-block; /* Hace que el círculo se comporte como un elemento en línea */
     }
 
 
     .lni lni-arrow-up-circle {
       color: #fff;
+      font-size: 60px;
 
     }
 
@@ -35,5 +36,5 @@
     }
 
     .ir-arriba:hover {
-      background-color: #0054b3;
+      background-color: #3995ff;
     }
