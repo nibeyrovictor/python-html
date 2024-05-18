@@ -8,8 +8,11 @@
     padding: 0;
 }
 
+
+
 body {
     font-family: 'Poppins', sans-serif;
+    text-decoration: none; /* Elimina el subrayado */
 }
 
 /* Carousel Caption */
@@ -32,4 +35,12 @@ body {
     .carousel-caption h5 {
         font-size: 4rem;
     }
+}
+
+
+.ir-arriba,
+.lni,
+.fab,
+.a {
+    text-decoration: none;
 }
