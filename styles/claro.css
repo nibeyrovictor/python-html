@@ -12,6 +12,7 @@ body {
 
 .navbar-dark .navbar-brand {
     color: #5e5e5ec4; /* Color de texto para la marca en modo claro */
+    background-color: #fff; /* Fondo blanco */
 }
 
 /* Estilos para el footer en modo claro */

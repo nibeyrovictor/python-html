@@ -3,17 +3,30 @@
       bottom: 20px;
       right: 20px;
       width: 50px;
+      /* Tamaño del círculo */
       height: 50px;
-      background-color: #271972;
-      color: #fff;
+      /* Tamaño del círculo */
       border-radius: 50%;
+      background-color: #00336d;
+      /* Color de fondo del botón */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 50px;
+      /* Tamaño del ícono */
+      color: #fff;
       text-align: center;
-      font-size: 24px;
       line-height: 50px;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
       opacity: 0;
       visibility: hidden;
+    }
+
+
+    .lni lni-arrow-up-circle {
+      color: #fff;
+
     }
 
     .ir-arriba.mostrar {
@@ -22,6 +35,5 @@
     }
 
     .ir-arriba:hover {
-      background-color: #0056b3;
+      background-color: #0054b3;
     }
-  

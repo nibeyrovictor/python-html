@@ -17,11 +17,12 @@
   <link rel="stylesheet" href="./styles/oscuro.css" id="estilos-oscuros">
   <!-- Estilo propio -->
   <link rel="stylesheet" href="./styles/style.css" >
+  <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
   <title>Grupo 16</title>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg sticky-top">
+  <nav class="navbar navbar-expand-lg sticky-top navbar-opaque">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img src="./img/logo-nav.png" alt="Bootstrap" width="30" height="24">
@@ -31,7 +32,6 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-        <!-- <a class="navbar-brand" href="#">Hidden brand</a> -->
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Home</a>
@@ -55,7 +55,6 @@
               <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
-
         </ul>
         <form class="d-flex" role="search">
           <input class="form-control me-2" type="search" placeholder="Texto a buscar" aria-label="">
@@ -64,13 +63,13 @@
         <button class="btn btn-dark" id="modo-dark" style="display:none;">
           <i class="fas fa-moon"></i> <!-- Ícono de luna para Modo Oscuro -->
         </button>
-        <button class="btn btn-light" id="modo-light" >
+        <button class="btn btn-light" id="modo-light">
           <i class="fas fa-sun"></i> <!-- Ícono de sol para Modo Claro -->
         </button>
       </div>
     </div>
   </nav>
-
+  
   <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Popover Header"
     data-bs-content="Some content inside the popover">
     Toggle popover
@@ -154,7 +153,7 @@
                 <div class="d-flex justify-content-center align-items-center">
                   <input class="btn btn-danger btn-lg btn-block" type="button" value="Limpiar" id="limpiarFormulario">
                   <a href="#" title="Boton mas cercano" data-bs-toggle="popover" data-bs-trigger="hover"
-                 data-bs-content="Botón para limpiar lo que se haya cargado en el formulario">?</a>
+                 data-bs-content="Botón para limpiar lo que se haya cargado en el formulario" class="lni lni-question-circle"></a>
                 </div>
                 </div>
               <div id="mensajeExito" style="display: none;">
@@ -176,7 +175,7 @@
 
 
     <!-- Flecha hacia arriba -->
-    <a href="#" class="ir-arriba" id="flecha-arriba" onclick="irArriba()">&#8593;</a>
+    <a href="#" class="ir-arriba lni lni-arrow-up-circle" id="flecha-arriba" onclick="irArriba()" ></a>
 
   <!-- Footer -->
   <!--Pie de página -->
