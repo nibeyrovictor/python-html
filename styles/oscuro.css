@@ -1,24 +1,15 @@
-/* Estilos para el modo oscuro */
 body {
     background-color: #333; /* Fondo oscuro */
     color: #fff; /* Texto claro */
 }
 
 /* Estilos para la navbar en modo oscuro */
-.navbar {
+.navbar-dark .navbar-nav .nav-link {
     color: #fff; /* Color de texto en modo oscuro */
-    background-color: #343a40; /* Color de fondo en modo oscuro */
-
 }
-.nav {
-    color: #fff; /* Color de texto en modo oscuro */
-    background-color: #343a40; /* Color de fondo en modo oscuro */
 
-}
-.navbar a {
-    color: #fff; /* Color de texto en modo oscuro */
-    background-color: #343a40; /* Color de fondo en modo oscuro */
-
+.navbar-dark .navbar-brand {
+    color: #fff; /* Color de texto para la marca en modo oscuro */
 }
 
 /* Estilos para el footer en modo oscuro */
@@ -32,4 +23,3 @@ body {
     color: #fff; /* Color de texto en modo oscuro */
     background-color: #333; /* Fondo en modo oscuro */
 }
-
