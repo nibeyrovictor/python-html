@@ -130,6 +130,65 @@
   google.maps.event.addDomListener(window, 'load', initMap);
 </script>
 
+<!-- Script de formulario de contacto -->
+</script>
+<script>
+  // Función para validar el formato del correo electrónico
+  function validarCorreoElectronico(correo) {
+    // Expresión regular para verificar el formato del correo electrónico
+    var re = /\S+@\S+\.\S+/;
+    return re.test(correo);
+  }
+
+  // Función para validar el formulario
+  function validarFormulario() {
+    var nombre = document.getElementById('Nombre').value;
+    var apellido = document.getElementById('Apellido').value;
+    var mensaje = document.getElementById('Comentario').value;
+    var correo = document.getElementById('mail').value;
+
+    // Verifica si los campos requeridos están vacíos
+    if (nombre === '' || apellido === '' || mensaje === '' || correo === '') {
+      alert('Por favor, complete todos los campos.');
+      return false;
+    }
+
+    // Verifica el formato del correo electrónico
+    if (!validarCorreoElectronico(correo)) {
+      alert('Por favor, ingrese un correo electrónico válido.');
+      return false;
+    }
+
+    return true;
+  }
+
+  // Agrega un evento click al botón "Enviar"
+  document.getElementById('enviarFormulario').addEventListener('click', function () {
+    if (validarFormulario()) {
+      // Muestra el mensaje de éxito y deshabilita el botón "Enviar"
+      document.getElementById('mensajeExito').style.display = 'block';
+      this.disabled = true;
+    }
+  });
+</script>
+
+<script>
+  // Función para limpiar los campos del formulario
+  function limpiarFormulario() {
+    document.getElementById('Nombre').value = '';
+    document.getElementById('Apellido').value = '';
+    document.getElementById('Comentario').value = '';
+    document.getElementById('mail').value = '';
+  }
+
+  // Asocia la función de limpiar al botón "Limpiar"
+  document.getElementById('limpiarFormulario').addEventListener('click', function() {
+    limpiarFormulario();
+  });
+</script>
+
+
+
 <!-- Script depop over para mensajes dentro de la página -->
       <script src="./styles/node_modules/@popperjs/core/dist/umd/popper.min.js"> </script>
       <script>
