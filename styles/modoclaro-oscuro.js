@@ -34,17 +34,3 @@ function activarModoClaro() {
 botonModoDark.addEventListener('click', activarModoOscuro);
 botonModoLight.addEventListener('click', activarModoClaro);
 
-// Script para alternar entre modo claro y oscuro
-document.getElementById('modo-dark').addEventListener('click', function () {
-  document.getElementById('estilos-oscuros').disabled = false;
-  document.getElementById('estilos-claros').disabled = true;
-  document.getElementById('modo-dark').style.display = 'none';
-  document.getElementById('modo-light').style.display = 'block';
-});
-
-document.getElementById('modo-light').addEventListener('click', function () {
-  document.getElementById('estilos-oscuros').disabled = true;
-  document.getElementById('estilos-claros').disabled = false;
-  document.getElementById('modo-dark').style.display = 'block';
-  document.getElementById('modo-light').style.display = 'none';
-});

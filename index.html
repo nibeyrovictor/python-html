@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="./styles/claro.css" id="estilos-claros">
   <link rel="stylesheet" href="./styles/oscuro.css" id="estilos-oscuros">
   <!-- Estilo propio -->
-  <link rel="stylesheet" href="./styles/style.css" >
+  <link rel="stylesheet" href="./styles/style.css">
   <link href="https://cdn.lineicons.com/4.0/lineicons.css" rel="stylesheet" />
   <title>Grupo 16</title>
 </head>
@@ -71,41 +71,41 @@
   </nav>
 
 
-<!-- Carrusel -->
-    <section id="slider">
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-              <div class="carousel-item active">
-                  <img src="./img/carrusel/amanecer.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption ">
-                      <h5>Admirando el amanecer
-                      </h5>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img src="./img/carrusel/costa flor.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption ">
-                      <h5>Flor de epoca
-                      </h5>
-                  </div>
-              </div>
-              <div class="carousel-item">
-                  <img src="./img/carrusel/costa_brete.jpg" class="d-block w-100" alt="...">
-                  <div class="carousel-caption ">
-                      <h5>Anochecer</h5>
-                  </div>
-              </div>
+  <!-- Carrusel -->
+  <section id="slider">
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./img/carrusel/amanecer.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Admirando el amanecer
+            </h5>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-          </button>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel/costa-flor.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Flor de epoca
+            </h5>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/carrusel/costa_brete.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            <h5>Anochecer</h5>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
   </section>
 
@@ -151,7 +151,8 @@
                 <div class="d-flex justify-content-center align-items-center">
                   <input class="btn btn-danger btn-lg btn-block" type="button" value="Limpiar" id="limpiarFormulario">
                   <a href="#" title="Boton mas cercano" data-bs-toggle="popover" data-bs-trigger="hover"
-                    data-bs-content="Botón para limpiar lo que se haya cargado en el formulario" class="lni lni-question-circle"></a>
+                    data-bs-content="Botón para limpiar lo que se haya cargado en el formulario"
+                    class="lni lni-question-circle"></a>
                 </div>
               </div>
               <div id="mensajeExito" style="display: none;">
@@ -169,11 +170,11 @@
       </div>
     </div>
   </section>
-  
 
 
-    <!-- Flecha hacia arriba -->
-    <a href="#" class="ir-arriba lni lni-arrow-up-circle" id="flecha-arriba" onclick="irArriba()" ></a>
+
+  <!-- Flecha hacia arriba -->
+  <a href="#" class="ir-arriba lni lni-arrow-up-circle" id="flecha-arriba" onclick="irArriba()"></a>
 
   <!-- Footer -->
   <!--Pie de página -->
@@ -200,9 +201,7 @@
             </a>
           </li>
           <li class="mx-3 d-inline">
-            <a href="https://www.instagram.com/" target="_blank">
-              <i class="fab fa-instagram"></i>
-            </a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
           </li>
         </ul>
       </div>
@@ -217,8 +216,22 @@
 
   <!-- Modo oscuro/claro -->
   <script src="./styles/modoclaro-oscuro.js"></script>
-
-
+  <!-- Script para alternar entre modo claro y oscuro -->
+  <script>
+  document.getElementById('modo-dark').addEventListener('click', function () {
+    document.getElementById('estilos-oscuros').disabled = false;
+    document.getElementById('estilos-claros').disabled = true;
+    document.getElementById('modo-dark').style.display = 'none';
+    document.getElementById('modo-light').style.display = 'block';
+  });
+  
+  document.getElementById('modo-light').addEventListener('click', function () {
+    document.getElementById('estilos-oscuros').disabled = true;
+    document.getElementById('estilos-claros').disabled = false;
+    document.getElementById('modo-dark').style.display = 'block';
+    document.getElementById('modo-light').style.display = 'none';
+  });
+</script>
 
 
   <script>
