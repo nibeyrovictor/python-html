@@ -1,0 +1,27 @@
+    .ir-arriba {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      width: 50px;
+      height: 50px;
+      background-color: #271972;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 24px;
+      line-height: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    .ir-arriba.mostrar {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .ir-arriba:hover {
+      background-color: #0056b3;
+    }
+  
