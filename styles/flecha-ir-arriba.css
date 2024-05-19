@@ -13,9 +13,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      /* Tamaño del ícono */
-      color: #fff;
-      text-align: center;
+
+        text-align: center;
       cursor: pointer;
       transition: background-color 0.3s ease-in-out;
       opacity: 0;
@@ -23,10 +22,10 @@
       display: inline-block; /* Hace que el círculo se comporte como un elemento en línea */
     }
 
-
-    .lni lni-arrow-up-circle {
-      color: #fff;
-      font-size: 60px;
+      /* Tamaño del ícono */
+    .fa-arrow-up {
+      color: #ffffff;
+      font-size: 50px;
 
     }
 
